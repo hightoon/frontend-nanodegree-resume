@@ -1,7 +1,3 @@
-
-var awesomeThought = "I am Haitong and I am AWESOME";
-funThought = awesomeThought.replace("AWESOME", "FUN");
-
 formattedName = HTMLheaderName.replace("%data%", "Haitong Chen");
 formattedRole = HTMLheaderRole.replace("%data%", "Sofware Engineer");
 
@@ -18,7 +14,7 @@ var bio = {
 var work = {
     "jobs": [
         {
-            "employer": "Nokia Newworks",
+            "employer": "Nokia Networks",
             "years": "2011 - present",
             "title": "Software Specialist",
         },
@@ -78,3 +74,14 @@ var education = {
         "date": "2015"
     }]
 };
+
+//append jobs
+if (work.jobs.length != 0) {
+    for (j in work.jobs) {
+        $("#workExperience").append(HTMLworkStart);
+        formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[j].employer);
+        formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[j].title);
+        jobInfo = formattedEmployer.concat(formattedTitle);
+        $(".work-entry:last").append(jobInfo);
+    }
+}
