@@ -9,27 +9,28 @@ $("#header").append(formattedName).append(formattedRole);
 
 var bio = {
     "name": "Haitong Chen",
-    "position": "Software Engineer",
+    "role": "Software Engineer",
     "age": 34,
-    "location": "Hangzhou"
+    "location": "Hangzhou",
+    "bioPic": "http://haitong.tk"
 };
 
 var work = {
-    "experience": [
+    "jobs": [
         {
-            "company": "Nokia Newworks",
+            "employer": "Nokia Newworks",
             "years": "2011 - present",
-            "position": "Software Specialist",
+            "title": "Software Specialist",
         },
         {
-            "company": "Motorola",
+            "employer": "Motorola",
             "years": "2008-2011",
-            "position": "Senior Software Engineer"
+            "title": "Senior Software Engineer"
         },
         {
-            "company": "ZTE",
+            "employer": "ZTE",
             "years": "2006-2008",
-            "position": "Embedded Software Engineer"
+            "title": "Embedded Software Engineer"
         }
     ]
 };
